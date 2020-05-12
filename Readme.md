@@ -1,7 +1,7 @@
 # Личный проект «Девайс»
 
 * Студент: [Антон Ромичев](https://up.htmlacademy.ru/htmlcss/28/user/33979).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий (sench) Железцов](https://htmlacademy.ru/profile/sench).
 
 ---
 
