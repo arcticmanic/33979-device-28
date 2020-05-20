@@ -46,25 +46,70 @@
     </header>
     <main class="outline">
       <div class="container">
-        <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
-        <div class="grid-50 outline">
-          <section class="main-section">
-            <h2>О нас</h2>
-            <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
-            <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
-            <ul>
-              <li><strong>Деловые линии</strong></li>
-              <li><strong>Автотрейдинг</strong></li>
-              <li><strong>ЖелДорЭкспедиция</strong></li>
-            </ul><a class="link-decor" href="#">Подробнее о нас</a>
+        <h1>Моноподы для селфи</h1>
+        <div class="breadcrumbs">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Каталог товаров</a></li>
+            <li><a class="current">Моноподы для селфи</a></li>
+          </ul>
+        </div>
+        <div class="grid-33 outline">
+          <section>
+            <h2>Фильтр</h2>
+            <div class="form-filter">
+              <form action="#">
+                <fieldset>
+                  <legend>Цвет</legend>
+                  <label>
+                    <input id="black" type="checkbox" name="color" value="black">Черный
+                  </label>
+                  <label>
+                    <input id="white" type="checkbox" name="color" value="white">Белый
+                  </label>
+                  <label>
+                    <input id="blue" type="checkbox" name="color" value="blue">Сини
+                  </label>
+                  <label>
+                    <input id="red" type="checkbox" name="color" value="red">Красный
+                  </label>
+                  <label>
+                    <input id="pink" type="checkbox" name="color" value="pink">Розовый
+                  </label>
+                </fieldset>
+                <fieldset>
+                  <legend>Bluetooth</legend>
+                  <label>
+                    <input id="bluetoothTrue" type="radio" name="bluetooth" value="true" checked>Есть
+                  </label>
+                  <label>
+                    <input id="bluetoothFalse" type="radio" name="bluetooth" value="false">Нет
+                  </label>
+                  <input type="submit" value="Показать">
+                </fieldset>
+              </form>
+            </div>
           </section>
         </div>
-        <div class="grid-50 outline">
-          <section class="main-section">
-            <h2>Контакты</h2>
-            <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
-            <p><img class="logo" src="https://via.placeholder.com/500x200" width="500" height="200" alt="Карта"></p><a class="link-decor" href="#">Напишите нам</a>
-          </section>
+        <div class="grid-66 outline">
+          <div class="catalog">
+            <article class="catalog-item"><img src="https://via.placeholder.com/300x500" alt="Любительская селфи-палка" width="300" height="500">
+              <h2>Любительская селфи-палка</h2>
+              <div class="catalog-item-price">500 руб.</div>
+            </article>
+            <article class="catalog-item"><img src="https://via.placeholder.com/300x500" alt="Профессиональная селфи-палка" width="300" height="500">
+              <h2>Профессиональная селфи-палка</h2>
+              <div class="catalog-item-price">1500 руб.</div>
+            </article>
+            <article class="catalog-item"><img src="https://via.placeholder.com/300x500" alt="Непотопляемая селфи-палка" width="300" height="500">
+              <h2>Непотопляемая селфи-палка</h2>
+              <div class="catalog-item-price">2500 руб.</div>
+            </article>
+            <article class="catalog-item"><img src="https://via.placeholder.com/300x500" alt="Селфи-палка &amp;laquo;Следуй за мной&amp;raquo;" width="300" height="500">
+              <h2>Селфи-палка &laquo;Следуй за мной&raquo;</h2>
+              <div class="catalog-item-price">4900 руб.</div>
+            </article>
+          </div>
         </div>
       </div>
     </main>
