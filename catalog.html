@@ -9,7 +9,7 @@
 
 <body>
   <header class="main-header">
-    <a href="/">
+    <a>
       <img src="https://via.placeholder.com/150x50" width="150" height="50" alt="Logo">
     </a>
     <div class="navbar">
@@ -92,9 +92,25 @@
       </div>
       <div class="grid-33">
         <section>
-          <h2>Фильтр</h2>
+          <h2>Фильтр:</h2>
           <div class="form-filter">
             <form action="https://echo.htmlacademy.ru/">
+              <fieldset>
+                <legend>Стоимость</legend>
+                <label>
+                  <input id="amount" type="text" name="amount" value="" readonly>
+                </label>
+                <div id="js-slider-range">
+                  <div class="ui-status-bar"></div>
+                  <div class="ui-status-bar-complete"></div>
+                  <div class="ui-pin-left">
+                    <div class="ui-pin-left-caption"></div>
+                  </div>
+                  <div class="ui-pin-right">
+                    <div class="ui-pin-right-caption"></div>
+                  </div>
+                </div>
+              </fieldset>
               <fieldset>
                 <legend>Цвет</legend>
                 <label>
@@ -121,6 +137,26 @@
         </section>
       </div>
       <div class="grid-66">
+        <div class="sort-block">
+          <h2>Сортировка:</h2>
+          <ul class="sort">
+            <li>
+              <a class="active">По цене</a>
+            </li>
+            <li>
+              <a href="#">По типу</a>
+            </li>
+            <li>
+              <a href="#">По популярности</a>
+            </li>
+            <li>
+              <a class="active">По возрастранию</a>
+            </li>
+            <li>
+              <a href="#">По убыванию</a>
+            </li>
+          </ul>
+        </div>
         <div class="catalog">
           <article class="catalog-item">
             <img src="https://via.placeholder.com/300x500" alt="Любительская селфи-палка" width="300" height="500">
@@ -143,6 +179,23 @@
             <div class="catalog-item-price">4900 руб.</div>
           </article>
         </div>
+        <ul class="pagination">
+          <li>
+            <a href="#">Назад</a>
+          </li>
+          <li>
+            <a class="active">1</a>
+          </li>
+          <li>
+            <a href="#">2</a>
+          </li>
+          <li>
+            <a href="#">3</a>
+          </li>
+          <li>
+            <a href="#">Вперед</a>
+          </li>
+        </ul>
       </div>
     </div>
   </main>
