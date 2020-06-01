@@ -14,7 +14,7 @@
     </a>
     <div class="navbar">
       <div class="search navbar-search">
-        <form action="https://echo.htmlacademy.ru/">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="search" placeholder="Поиск по сайту">
           <button type="submit">Поиск</button>
         </form>
@@ -232,6 +232,28 @@
         <img src="img/logo-greyscale-2.png" width="260" height="100" alt="Компания SP Gatgets">
         <img src="img/logo-greyscale-3.png" width="260" height="100" alt="Компания GoPro">
         <img src="img/logo-greyscale-4.png" width="260" height="100" alt="Компания VIVE">
+      </div>
+      <div class="map-popup">
+        <img src="img/map-big.png" width="994" height="593" alt="Карта">
+        <button class="js-close-popup" type="button">
+          <img src="img/icon-cross.svg" alt="Закрыть окно">
+        </button>
+      </div>
+      <div class="contact-form-popup">
+        <form class="contact-form" action="https://echo.htmlacademy.ru/" method="post">
+          <label for="name">Ваше имя:
+            <input type="text" id="name" name="name" placeholder="Имя Фамилия" required>
+          </label>
+          <label for="email">Ваш e-mail:
+            <input type="email" id="email" name="email" placeholder="email@example.com" required>
+          </label>
+          <label for="message">Текст письма:</label>
+          <textarea id="message" name="message" placeholder="В свободной форме" required></textarea>
+          <button type="submit">Отправить</button>
+        </form>
+        <button class="js-close-popup" type="button">
+          <img src="img/icon-cross.svg" alt="Закрыть окно">
+        </button>
       </div>
       <div class="grid-50">
         <section class="main-section">

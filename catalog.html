@@ -14,7 +14,7 @@
     </a>
     <div class="navbar">
       <div class="search navbar-search">
-        <form action="https://echo.htmlacademy.ru/">
+        <form action="https://echo.htmlacademy.ru/" method="post">
           <input type="search" placeholder="Поиск по сайту">
           <button type="submit">Поиск</button>
         </form>
@@ -97,17 +97,21 @@
             <form action="https://echo.htmlacademy.ru/">
               <fieldset>
                 <legend>Стоимость</legend>
-                <label>
-                  <input id="amount" type="text" name="amount" value="" readonly>
-                </label>
-                <div id="js-slider-range">
-                  <div class="ui-status-bar"></div>
-                  <div class="ui-status-bar-complete"></div>
-                  <div class="ui-pin-left">
-                    <div class="ui-pin-left-caption"></div>
+                <div class="range-filter">
+                  <div class="range-controls">
+                    <div class="scale">
+                      <div class="bar" style="width:30%;margin-left:20%"></div>
+                    </div>
+                    <div class="toggle toggle-min" tabindex="0" style="left:20%"></div>
+                    <div class="toggle toggle-max" tabindex="0" style="left:50%"></div>
                   </div>
-                  <div class="ui-pin-right">
-                    <div class="ui-pin-right-caption"></div>
+                  <div class="price-controls">
+                    <label class="min-price">от
+                      <input type="number" name="min-price" value="0" step="100">
+                    </label>
+                    <label class="max-price">до
+                      <input type="number" name="max-price" value="15000" step="100">
+                    </label>
                   </div>
                 </div>
               </fieldset>
@@ -118,7 +122,7 @@
                 <label>
                   <input id="white" type="checkbox" name="color" value="white">Белый</label>
                 <label>
-                  <input id="blue" type="checkbox" name="color" value="blue">Сини</label>
+                  <input id="blue" type="checkbox" name="color" value="blue">Синий</label>
                 <label>
                   <input id="red" type="checkbox" name="color" value="red">Красный</label>
                 <label>
@@ -131,7 +135,7 @@
                 <label>
                   <input id="bluetoothFalse" type="radio" name="bluetooth" value="false">Нет</label>
               </fieldset>
-              <button type="submit" value="Показать"></button>
+              <button type="submit">Показать</button>
             </form>
           </div>
         </section>
