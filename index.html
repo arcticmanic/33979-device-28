@@ -5,77 +5,78 @@
   <meta charset="utf-8">
   <meta name="description" content="HTML Academy: Девайс">
   <title>HTML Academy: Девайс</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 
 <body>
-  <header class="main-header">
-    <a>
-      <img src="img/logo.svg" width="163" height="35" alt="Девайс">
-    </a>
-    <div class="navbar">
-      <div class="search navbar-search">
-        <form action="https://echo.htmlacademy.ru/" method="post">
-          <input type="search" placeholder="Поиск по сайту">
-          <button type="submit">Поиск</button>
-        </form>
+  <div class="container">
+    <header class="main-header">
+      <a class="logo-link">
+        <img src="img/logo.svg" width="163" height="35" alt="Девайс">
+      </a>
+      <div class="navbar">
+        <div class="search navbar-search">
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <input type="search" placeholder="Поиск по сайту">
+            <button type="submit">Поиск</button>
+          </form>
+        </div>
+        <ul>
+          <li>
+            <a href="#"><span class="icon"></span> Войти</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon"></span> Сравнить</a>
+          </li>
+          <li>
+            <a href="#"><span class="icon"></span> Корзина</a>
+          </li>
+        </ul>
       </div>
-      <ul>
-        <li>
-          <a href="#"><span class="icon"></span> Войти</a>
-        </li>
-        <li>
-          <a href="#"><span class="icon"></span> Сравнить</a>
-        </li>
-        <li>
-          <a href="#"><span class="icon"></span> Корзина</a>
-        </li>
-      </ul>
-    </div>
-    <nav class="main-menu">
-      <ul>
-        <li>
-          <a href="catalog.html">Каталог товаров</a>
-          <div class="main-menu-submenu">
-            <ul>
-              <li>
-                <a href="#">Виртуальная реальность</a>
-              </li>
-              <li>
-                <a href="#">Моноподы для селфи</a>
-              </li>
-              <li>
-                <a href="#">Экшн-камеры</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="#">Фитнес-браслеты</a>
-              </li>
-              <li>
-                <a href="#">Умные часы</a>
-              </li>
-            </ul>
-            <ul>
-              <li>
-                <a href="#">Квадрокоптер</a>
-              </li>
-            </ul>
-          </div>
-        </li>
-        <li>
-          <a href="#">Доставка</a>
-        </li>
-        <li>
-          <a href="#">Гарантия</a>
-        </li>
-        <li>
-          <a href="#">Контакты</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-    <div class="container">
+      <nav class="main-navigation">
+        <ul>
+          <li>
+            <a href="catalog.html">Каталог товаров</a>
+            <div class="main-navigation-submenu">
+              <ul>
+                <li>
+                  <a href="#">Виртуальная реальность</a>
+                </li>
+                <li>
+                  <a href="#">Моноподы для селфи</a>
+                </li>
+                <li>
+                  <a href="#">Экшн-камеры</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Фитнес-браслеты</a>
+                </li>
+                <li>
+                  <a href="#">Умные часы</a>
+                </li>
+              </ul>
+              <ul>
+                <li>
+                  <a href="#">Квадрокоптер</a>
+                </li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <a href="#">Доставка</a>
+          </li>
+          <li>
+            <a href="#">Гарантия</a>
+          </li>
+          <li>
+            <a href="#">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="index-page">
       <h1 class="visually-hidden">Интернет-магазин "Девайс"</h1>
       <div class="slider">
         <div class="slider-overview">
@@ -257,7 +258,7 @@
       </div>
       <div class="grid-50">
         <section class="main-section">
-          <h2>О нас</h2>
+          <h2 class="heading">О нас</h2>
           <p>Огромный выбор гаджетов не оставит равнодушным гика, который есть в каждом из нас.</p>
           <p>Мы можем доставить ваш товар в самые отдаленные точки России! DEVICE работает со многими транспортными компаниями:</p>
           <ul>
@@ -271,83 +272,85 @@
               <strong>ЖелДорЭкспедиция</strong>
             </li>
           </ul>
-          <a class="link-decor" href="#">Подробнее о нас</a>
+          <a class="button" href="#">Подробнее о нас</a>
         </section>
       </div>
       <div class="grid-50">
         <section class="main-section">
-          <h2>Контакты</h2>
+          <h2 class="heading">Контакты</h2>
           <p>Вы можете забрать товар сами, заехав в наш офис. Заодно, вы сможете проверить работоспособность покупки. Всякое бывает.</p>
           <p>
             <img class="logo" src="img/map.jpg" width="560" height="222" alt="Карта">
           </p>
-          <a class="link-decor" href="#">Напишите нам</a>
+          <a class="button" href="#">Напишите нам</a>
         </section>
       </div>
-    </div>
-  </main>
+    </main>
+  </div>
   <footer class="main-footer">
-    <div class="grid-33">
-      <a>
-        <img src="img/logo-color.svg" width="163" height="35" alt="Девайс">
-      </a>
-      <address>г. Москва, ул. Строителей, 15</address>
-      <div class="decor"></div>
-    </div>
-    <div class="grid-33">
-      <div class="footer-menu">
-        <ul>
-          <li>
-            <a href="#">Доставка</a>
-          </li>
-          <li>
-            <a href="#">Гарантия</a>
-          </li>
-          <li>
-            <a href="#">Контакты</a>
-          </li>
-        </ul>
-      </div>
-      <div class="socials">
-        <ul>
-          <li>
-            <a href="#">
-              <img src="img/icon-facebook.svg" alt="Facebook" width="30" height="30">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icon-instagram.svg" alt="Instagram" width="30" height="30">
-            </a>
-          </li>
-          <li>
-            <a href="#">
-              <img src="img/icon-twitter.svg" alt="Twitter" width="30" height="30">
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="grid-33">
-      <div class="navbar-footer">
-        <ul>
-          <li>
-            <a href=""><span class="icon"></span>Войти</a>
-          </li>
-          <li>
-            <a href=""><span class="icon"></span>Сравнить</a>
-          </li>
-          <li>
-            <a href=""><span class="icon"></span>Корзина</a>
-          </li>
-        </ul>
-      </div>
-      <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
-      </p>
-      <div class="copyright">
-        <a href="#">
-          <img src="img/logo-htmlacademy.svg" alt="Htmlacademy" width="27" height="34">
+    <div class="container">
+      <div class="grid-33">
+        <a class="logo-link">
+          <img src="img/logo-color.svg" width="163" height="35" alt="Девайс">
         </a>
+        <address>г. Москва, ул. Строителей, 15</address>
+        <div class="decor"></div>
+      </div>
+      <div class="grid-33">
+        <div class="footer-menu">
+          <ul>
+            <li>
+              <a href="#">Доставка</a>
+            </li>
+            <li>
+              <a href="#">Гарантия</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+        <div class="socials">
+          <ul>
+            <li>
+              <a href="#">
+                <img src="img/icon-facebook.svg" alt="Facebook" width="30" height="30">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon-instagram.svg" alt="Instagram" width="30" height="30">
+              </a>
+            </li>
+            <li>
+              <a href="#">
+                <img src="img/icon-twitter.svg" alt="Twitter" width="30" height="30">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="grid-33">
+        <div class="navbar-footer">
+          <ul>
+            <li>
+              <a href=""><span class="icon"></span>Войти</a>
+            </li>
+            <li>
+              <a href=""><span class="icon"></span>Сравнить</a>
+            </li>
+            <li>
+              <a href=""><span class="icon"></span>Корзина</a>
+            </li>
+          </ul>
+        </div>
+        <p>Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
+        </p>
+        <div class="copyright">
+          <a href="#">
+            <img src="img/logo-htmlacademy.svg" alt="Htmlacademy" width="27" height="34">
+          </a>
+        </div>
       </div>
     </div>
   </footer>
