@@ -55,6 +55,7 @@ a {
   --basic-white: #fff;
   --basic-grey: #464646;
   --basic-half-grey: #7e7e7e;
+  --basic-disabled-grey: #a6a6a6;
   --basic-grey-light: #e5e5e5;
   --special-yellow: #f7e296;
   --special-yellow-dark: #f0c52e;
@@ -65,7 +66,7 @@ a {
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Open Sans", "Tahoma", sans-serif;
   font-size: 15px;
   line-height: 28px;
   font-weight: 300;
@@ -89,7 +90,7 @@ body {
 }
 
 .heading {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   letter-spacing: 0.2em;
   font-size: 47px;
@@ -98,7 +99,7 @@ body {
 
 /* UI */
 .button {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 12px;
@@ -112,7 +113,7 @@ body {
 
 /* Filter */
 .form-filter legend {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 14px;
   line-height: 17px;
@@ -125,7 +126,7 @@ body {
 }
 
 .form-filter input[attr="disabled"] {
-  color: #a6a6a6;
+  color: var(--basic-disabled-grey);
 }
 
 /* Header */
@@ -143,7 +144,7 @@ body {
 }
 
 .main-navigation {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -215,7 +216,7 @@ body {
 }
 
 .footer-menu li {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -266,7 +267,7 @@ body {
 
 /* Index page */
 .main-section ul {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 16px;
   line-height: 28px;
@@ -274,14 +275,14 @@ body {
 
 /* Catalog page */
 .inner-page h1 {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 47px;
   line-height: 59px;
 }
 
 .catalog-item h2 {
-  font-family: "Gilroy Extra Bold", sans-serif;
+  font-family: "Gilroy Extra Bold", "Tahoma", sans-serif;
   font-weight: bold;
   font-size: 18px;
   line-height: 22px;
@@ -289,7 +290,7 @@ body {
 }
 
 .catalog-item-price {
-  font-family: "Gilroy Light", sans-serif;
+  font-family: "Gilroy Light", "Tahoma", sans-serif;
   font-size: 16px;
   line-height: 19px;
   letter-spacing: 0.05em;
