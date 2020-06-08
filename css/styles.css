@@ -425,7 +425,7 @@ body {
   font-weight: normal;
   font-style: normal;
   font-size: 14px;
-  color: var(--basick-black);
+  color: var(--basic-black);
   line-height: 19px;
   opacity: 0.3;
 }
@@ -454,7 +454,7 @@ body {
   font-weight: bold;
   font-size: 16px;
   line-height: 20px;
-  color: var(--basick-black);
+  color: var(--basic-black);
   letter-spacing: 0.1em;
   text-transform: uppercase;
   opacity: 0.3;
