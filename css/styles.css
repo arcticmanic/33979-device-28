@@ -4,28 +4,28 @@
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 300;
-  src: local("Open Sans Light"), local("OpenSans-Light"), url("/fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-300.woff2") format("woff2"), url("/fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-300.woff") format("woff");
+  src: local("Open Sans Light"), local("OpenSans-Light"), url("../fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-300.woff2") format("woff2"), url("../fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-300.woff") format("woff");
 }
 
 @font-face {
   font-family: "Open Sans";
   font-style: normal;
   font-weight: 400;
-  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("/fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("/fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-regular.woff") format("woff");
+  src: local("Open Sans Regular"), local("OpenSans-Regular"), url("../fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-regular.woff2") format("woff2"), url("../fonts/open-sans-v17-latin_cyrillic-ext_cyrillic-regular.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Light";
   font-style: normal;
   font-weight: normal;
-  src: local("Gilroy Light"), url("/fonts/gilroylight.woff2") format("woff2"), url("/fonts/gilroylight.woff") format("woff");
+  src: local("Gilroy Light"), url("../fonts/gilroylight.woff2") format("woff2"), url("../fonts/gilroylight.woff") format("woff");
 }
 
 @font-face {
   font-family: "Gilroy Extra Bold";
   font-style: normal;
   font-weight: normal;
-  src: local("Gilroy Extra Bold"), url("/fonts/gilroyextrabold.woff2") format("woff2"), url("/fonts/gilroyextrabold.woff") format("woff");
+  src: local("Gilroy Extra Bold"), url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
 /* Reset */
@@ -628,35 +628,35 @@ body {
 }
 
 .logo-block li:nth-child(1) {
-  background-image: url("/img/logo-greyscale-1.png");
+  background-image: url("../img/logo-greyscale-1.png");
 }
 
 .logo-block li:nth-child(1):hover {
-  background-image: url("/img/logo-1.png");
+  background-image: url("../img/logo-1.png");
 }
 
 .logo-block li:nth-child(2) {
-  background-image: url("/img/logo-greyscale-2.png");
+  background-image: url("../img/logo-greyscale-2.png");
 }
 
 .logo-block li:nth-child(2):hover {
-  background-image: url("/img/logo-2.png");
+  background-image: url("../img/logo-2.png");
 }
 
 .logo-block li:nth-child(3) {
-  background-image: url("/img/logo-greyscale-3.png");
+  background-image: url("../img/logo-greyscale-3.png");
 }
 
 .logo-block li:nth-child(3):hover {
-  background-image: url("/img/logo-3.png");
+  background-image: url("../img/logo-3.png");
 }
 
 .logo-block li:nth-child(4) {
-  background-image: url("/img/logo-greyscale-4.png");
+  background-image: url("../img/logo-greyscale-4.png");
 }
 
 .logo-block li:nth-child(4):hover {
-  background-image: url("/img/logo-4.png");
+  background-image: url("../img/logo-4.png");
 }
 
 .contact-form-popup {
