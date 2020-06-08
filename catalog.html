@@ -15,10 +15,10 @@
         <img src="img/logo.svg" width="163" height="35" alt="Девайс">
       </a>
       <div class="navbar">
-        <div class="search navbar-search">
+        <div class="navbar-search">
           <form action="https://echo.htmlacademy.ru/" method="post">
             <input type="search" placeholder="Поиск по сайту">
-            <button type="submit">Поиск</button>
+            <button type="submit">Найти</button>
           </form>
         </div>
         <ul>
@@ -37,32 +37,30 @@
         <ul>
           <li>
             <a href="catalog.html">Каталог товаров</a>
-            <div class="main-navigation-submenu">
-              <ul>
-                <li>
-                  <a href="#">Виртуальная реальность</a>
-                </li>
-                <li>
-                  <a href="#">Моноподы для селфи</a>
-                </li>
-                <li>
-                  <a href="#">Экшн-камеры</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">Фитнес-браслеты</a>
-                </li>
-                <li>
-                  <a href="#">Умные часы</a>
-                </li>
-              </ul>
-              <ul>
-                <li>
-                  <a href="#">Квадрокоптер</a>
-                </li>
-              </ul>
-            </div>
+            <ul class="main-navigation-submenu">
+              <li>
+                <a href="#">Виртуальная реальность</a>
+              </li>
+              <li>
+                <a href="#">Моноподы для селфи</a>
+              </li>
+              <li>
+                <a href="#">Экшн-камеры</a>
+              </li>
+            </ul>
+            <ul class="main-navigation-submenu">
+              <li>
+                <a href="#">Фитнес-браслеты</a>
+              </li>
+              <li>
+                <a href="#">Умные часы</a>
+              </li>
+            </ul>
+            <ul class="main-navigation-submenu">
+              <li>
+                <a href="#">Квадрокоптер</a>
+              </li>
+            </ul>
           </li>
           <li>
             <a href="#">Доставка</a>
@@ -166,27 +164,43 @@
           <div class="catalog">
             <article class="catalog-item">
               <img src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
+              <div class="catalog-item-overlay">
+                <button class="button">В корзину</button>
+                <button class="button-compare">Добавить к сравнению</button>
+              </div>
               <h2>Любительская селфи-палка</h2>
               <div class="catalog-item-price">500 руб.</div>
             </article>
             <article class="catalog-item">
               <img src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
+              <div class="catalog-item-overlay">
+                <button class="button">В корзину</button>
+                <button class="button-compare">Добавить к сравнению</button>
+              </div>
               <h2>Профессиональная селфи-палка</h2>
               <div class="catalog-item-price">1500 руб.</div>
             </article>
             <article class="catalog-item">
               <img src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
+              <div class="catalog-item-overlay">
+                <button class="button">В корзину</button>
+                <button class="button-compare">Добавить к сравнению</button>
+              </div>
               <h2>Непотопляемая селфи-палка</h2>
               <div class="catalog-item-price">2500 руб.</div>
             </article>
             <article class="catalog-item">
               <img src="img/item-4.jpg" alt="Селфи-палка &amp;laquo;Следуй за мной&amp;raquo;" width="360" height="380">
+              <div class="catalog-item-overlay">
+                <button class="button">В корзину</button>
+                <button class="button-compare">Добавить к сравнению</button>
+              </div>
               <h2>Селфи-палка &laquo;Следуй за мной&raquo;</h2>
               <div class="catalog-item-price">4900 руб.</div>
             </article>
           </div>
           <ul class="pagination">
-            <li>
+            <li class="prev">
               <a href="#">Назад</a>
             </li>
             <li>
@@ -198,7 +212,7 @@
             <li>
               <a href="#">3</a>
             </li>
-            <li>
+            <li class="next">
               <a href="#">Вперед</a>
             </li>
           </ul>
