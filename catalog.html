@@ -107,15 +107,15 @@
         <form action="https://echo.htmlacademy.ru/" method="post">
           <fieldset>
             <legend>Стоимость</legend>
-            <div class="range-filter">
-              <div class="range-controls">
+            <div class="filter-range">
+              <div class="filter-range-controls">
                 <div class="scale">
                   <div class="bar"></div>
                 </div>
                 <div class="toggle toggle-min" tabindex="0"></div>
                 <div class="toggle toggle-max" tabindex="0"></div>
               </div>
-              <div class="price-controls">
+              <div class="filter-price-controls">
                 <label class="min-price">от
                   <input type="number" name="min-price" value="0" step="100">
                 </label>
@@ -127,23 +127,41 @@
           </fieldset>
           <fieldset>
             <legend>Цвет</legend>
-            <label>
-              <input id="black" type="checkbox" name="color" value="black">Черный</label>
-            <label>
-              <input id="white" type="checkbox" name="color" value="white">Белый</label>
-            <label>
-              <input id="blue" type="checkbox" name="color" value="blue">Синий</label>
-            <label>
-              <input id="red" type="checkbox" name="color" value="red" disabled>Красный</label>
-            <label>
-              <input id="pink" type="checkbox" name="color" value="pink">Розовый</label>
+            <ul>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden" id="filter-black" type="checkbox" name="color" value="black">
+                <label for="filter-black">Черный</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden" id="filter-white" type="checkbox" name="color" value="white">
+                <label for="filter-white">Белый</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden" id="filter-blue" type="checkbox" name="color" value="blue">
+                <label for="filter-blue">Синий</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden" id="filter-red" type="checkbox" name="color" value="red">
+                <label for="filter-red">Красный</label>
+              </li>
+              <li class="filter-option filter-checkbox">
+                <input class="visually-hidden" id="filter-pink" type="checkbox" name="color" value="pink" disabled>
+                <label for="filter-pink">Розовый</label>
+              </li>
+            </ul>
           </fieldset>
           <fieldset>
             <legend>Bluetooth</legend>
-            <label>
-              <input id="bluetoothTrue" type="radio" name="bluetooth" value="true" checked>Есть</label>
-            <label>
-              <input id="bluetoothFalse" type="radio" name="bluetooth" value="false">Нет</label>
+            <ul>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden" id="bluetoothTrue" type="radio" name="bluetooth" value="true" checked>
+                <label for="bluetoothTrue">Есть</label>
+              </li>
+              <li class="filter-option filter-radio">
+                <input class="visually-hidden" id="bluetoothFalse" type="radio" name="bluetooth" value="false">
+                <label for="bluetoothFalse">Нет</label>
+              </li>
+            </ul>
           </fieldset>
           <button class="button" type="submit">Показать</button>
         </form>
@@ -216,7 +234,7 @@
           </div>
         </div>
         <ul class="pagination">
-          <li class="prev">
+          <li class="pagination-prev">
             <a href="#">Назад</a>
           </li>
           <li>
@@ -228,7 +246,7 @@
           <li>
             <a href="#">3</a>
           </li>
-          <li class="next">
+          <li class="pagination-next">
             <a href="#">Вперед</a>
           </li>
         </ul>
