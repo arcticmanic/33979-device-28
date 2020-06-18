@@ -6,16 +6,23 @@
 
 let contactLink = document.querySelector('.js-contact-link');
 let contactPopup = document.querySelector('.js-modal-contact');
+let contactClose;
+let contactForm;
+let contactFormName;
+let contactFormEmail;
+let contactFormTextarea;
+let contactFormFields;
 
-try {
-  let contactClose = contactPopup.querySelector('.js-modal-close');
-  let contactForm = contactPopup.querySelector('.js-contact-form');
-  let contactFormName = contactForm.querySelector('.js-contact-form-name');
-  let contactFormEmail = contactForm.querySelector('.js-contact-form-email');
-  let contactFormTextarea = contactForm.querySelector('.js-contact-form-textarea');
-  let contactFormFields = contactForm.querySelectorAll('input, textarea');
-} catch (err) {
+if (contactPopup) {
+  contactClose = contactPopup.querySelector('.js-modal-close');
+  contactForm = contactPopup.querySelector('.js-contact-form');
+}
 
+if (contactForm) {
+  contactFormName = contactForm.querySelector('.js-contact-form-name');
+  contactFormEmail = contactForm.querySelector('.js-contact-form-email');
+  contactFormTextarea = contactForm.querySelector('.js-contact-form-textarea');
+  contactFormFields = contactForm.querySelectorAll('input, textarea');
 }
 
 /**
@@ -44,7 +51,7 @@ try {
  * Contact Form Listeners
  */
 
-try {
+if (contactLink && contactPopup) {
   contactLink.addEventListener('click', function (event) {
     event.preventDefault();
     contactPopup.classList.add('modal-show');
@@ -84,20 +91,10 @@ try {
         event.preventDefault();
         contactPopup.classList.remove('modal-show');
         contactPopup.classList.remove('modal-error');
-      } else if (mapPopup.classList.contains('modal-show')) {
-        event.preventDefault();
-        mapPopup.classList.remove('modal-show');
-        mapPopup.classList.remove('modal-error');
       }
     }
   });
-} catch (err) {
-
 }
-
-
-
-
 
 function checkEmptyFields() {
   let isError = false;
@@ -119,7 +116,7 @@ function checkEmptyFields() {
  * Map Listeners
  */
 
-try {
+if (mapLink && mapPopup && mapClose) {
   mapLink.addEventListener('click', function (event) {
     event.preventDefault();
     mapPopup.classList.add('modal-show');
@@ -130,8 +127,16 @@ try {
     mapPopup.classList.remove('modal-show');
     mapPopup.classList.remove('modal-error');
   });
-} catch (err) {
 
+  window.addEventListener('keydown', function (event) {
+    if (event.keyCode === 27) {
+      if (mapPopup.classList.contains('modal-show')) {
+        event.preventDefault();
+        mapPopup.classList.remove('modal-show');
+        mapPopup.classList.remove('modal-error');
+      }
+    }
+  });
 }
 
 /**
@@ -152,17 +157,19 @@ let sliderSettings = {
 let sliderMainNav = document.querySelectorAll('.slider .slider-controls button');
 let sliderMainScene = document.querySelector('.slider-slides');
 
-for (let i = 0, length = sliderMainNav.length; i < length; i++) {
-  sliderMainNav[i].addEventListener('click', function (event) {
-    event.preventDefault();
+if (sliderMainNav && sliderMainScene) {
+  for (let i = 0, length = sliderMainNav.length; i < length; i++) {
+    sliderMainNav[i].addEventListener('click', function (event) {
+      event.preventDefault();
 
-    for (let i = 0; i < sliderMainNav.length; i++) {
-      sliderMainNav[i].classList.remove('active');
-    }
+      for (let i = 0; i < sliderMainNav.length; i++) {
+        sliderMainNav[i].classList.remove('active');
+      }
 
-    this.classList.add('active')
-    sliderSettings.slideMoveLeft(sliderMainScene, 1160 * i);
-  });
+      this.classList.add('active')
+      sliderSettings.slideMoveLeft(sliderMainScene, 1160 * i);
+    });
+  }
 }
 
 /* Service block */
@@ -170,21 +177,23 @@ for (let i = 0, length = sliderMainNav.length; i < length; i++) {
 let serviceNav = document.querySelectorAll('.slider-services-nav li');
 let serviceBlock = document.querySelectorAll('.slider-services-content');
 
-for (let i = 0, length = serviceNav.length; i < length; i++) {
-  serviceNav[i].addEventListener('click', function (event) {
-    event.preventDefault();
+if (serviceNav && serviceBlock) {
+  for (let i = 0, length = serviceNav.length; i < length; i++) {
+    serviceNav[i].addEventListener('click', function (event) {
+      event.preventDefault();
 
-    for (let i = 0; i < serviceNav.length; i++) {
-      serviceNav[i].classList.remove('slider-services-nav-active');
-    }
+      for (let i = 0; i < serviceNav.length; i++) {
+        serviceNav[i].classList.remove('slider-services-nav-active');
+      }
 
-    for (let i = 0; i < serviceBlock.length; i++) {
-      serviceBlock[i].classList.remove('active');
-    }
+      for (let i = 0; i < serviceBlock.length; i++) {
+        serviceBlock[i].classList.remove('active');
+      }
 
-    this.classList.add('slider-services-nav-active');
-    serviceBlock[i].classList.add('active');
-  });
+      this.classList.add('slider-services-nav-active');
+      serviceBlock[i].classList.add('active');
+    });
+  }
 }
 
 /**
