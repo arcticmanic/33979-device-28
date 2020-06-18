@@ -25,22 +25,23 @@
           </div>
           <ul>
             <li>
-              <a class="link link-enter" href="#">
-                <img src="img/icon-user.svg" width="13" height="14" alt=""> Войти</a>
+              <a class="navbar-link link-enter" href="#">
+                <img src="img/icon-user.svg" width="13" height="14" alt=""> Валентин Петухов</a>
+              <a class="link link-exit" href="#">Выйти</a>
             </li>
             <li>
-              <a class="link link-compare" href="#">
+              <a class="navbar-link link-compare" href="#">
                 <img src="img/icon-chart.svg" width="14" height="14" alt=""> Сравнить</a>
             </li>
             <li>
-              <a class="link link-cart" href="#">
+              <a class="navbar-link link-cart" href="#">
                 <img src="img/icon-cart.svg" width="10" height="10" alt=""> Корзина</a>
             </li>
           </ul>
         </div>
         <nav class="main-navigation">
-          <div class="main-navigation-catalog">Каталог товаров<button type="button">
-              <img src="img/icon-plus.svg" alt="Раскрыть меню «Каталог товаров»">
+          <div class="main-navigation-catalog">Каталог товаров<button class="main-navigation-open" type="button" aria-label="Раскрыть меню «Каталог товаров»">
+              <img src="img/icon-plus.svg" alt="">
             </button>
           </div>
           <ul class="main-navigation-base">
@@ -188,48 +189,49 @@
           </ul>
         </div>
         <div class="catalog-list">
-          <div class="catalog-item">
+          <div class="catalog-item" tabindex="0">
             <div class="catalog-item-image-box">
               <img class="catalog-item-image" src="img/item-1.jpg" alt="Любительская селфи-палка" width="360" height="380">
               <div class="catalog-item-overlay">
-                <button class="button">В корзину</button>
-                <button class="button-compare">Добавить к сравнению</button>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-compare" type="button">Добавить к сравнению</button>
               </div>
             </div>
             <div class="catalog-item-title">Любительская селфи-палка<div class="catalog-item-price">500 руб.</div>
             </div>
           </div>
-          <div class="catalog-item">
+          <div class="catalog-item" tabindex="0">
             <div class="catalog-item-image-box">
               <img class="catalog-item-image" src="img/item-2.jpg" alt="Профессиональная селфи-палка" width="360" height="380">
               <div class="catalog-item-overlay">
-                <button class="button">В корзину</button>
-                <button class="button-compare">Добавить к сравнению</button>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-compare" type="button">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="catalog-item-title">Профессиональная селфи-палка<div class="catalog-item-price">1500 руб.</div>
+            <div class="catalog-item-title">Профессиональная
+              <br> селфи-палка<div class="catalog-item-price">1 500 руб.</div>
             </div>
           </div>
-          <div class="catalog-item">
+          <div class="catalog-item" tabindex="0">
             <div class="catalog-item-image-box">
               <img class="catalog-item-image" src="img/item-3.jpg" alt="Непотопляемая селфи-палка" width="360" height="380">
               <div class="catalog-item-overlay">
-                <button class="button">В корзину</button>
-                <button class="button-compare">Добавить к сравнению</button>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-compare" type="button">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="catalog-item-title">Непотопляемая селфи-палка<div class="catalog-item-price">2500 руб.</div>
+            <div class="catalog-item-title">Непотопляемая селфи-палка<div class="catalog-item-price">2 500 руб.</div>
             </div>
           </div>
-          <div class="catalog-item">
+          <div class="catalog-item catalog-item-new" tabindex="0">
             <div class="catalog-item-image-box">
-              <img class="catalog-item-image" src="img/item-4.jpg" alt="Селфи-палка &amp;laquo;Следуй за мной&amp;raquo;" width="360" height="380">
+              <img class="catalog-item-image" src="img/item-4.jpg" alt="Селфи-палка «Следуй за мной»" width="360" height="380">
               <div class="catalog-item-overlay">
-                <button class="button">В корзину</button>
-                <button class="button-compare">Добавить к сравнению</button>
+                <button class="button" type="button">В корзину</button>
+                <button class="button-compare" type="button">Добавить к сравнению</button>
               </div>
             </div>
-            <div class="catalog-item-title">Селфи-палка &laquo;Следуй за мной&raquo;<div class="catalog-item-price">4900 руб.</div>
+            <div class="catalog-item-title">Селфи-палка &laquo;Следуй за мной&raquo;<div class="catalog-item-price">4 900 руб.</div>
             </div>
           </div>
         </div>
@@ -256,9 +258,11 @@
   <footer class="main-footer">
     <div class="wrapper">
       <div class="inner-footer">
-        <a class="logo-link" href="./">
-          <img src="img/logo-color.svg" width="163" height="35" alt="Девайс">
-        </a>
+        <div class="footer-logo-block">
+          <a class="logo-link" href="./">
+            <img src="img/logo-color.svg" width="163" height="35" alt="Девайс">
+          </a>
+        </div>
         <address>г. Москва, ул. Строителей, 15</address>
         <ul class="footer-menu">
           <li>
@@ -274,53 +278,52 @@
         <ul class="socials">
           <li>
             <a href="#">
-              <img src="img/icon-facebook.svg" alt="Facebook" width="30" height="30">
+              <img src="img/icon-facebook.svg" alt="Facebook" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-instagram.svg" alt="Instagram" width="30" height="30">
+              <img src="img/icon-instagram.svg" alt="Instagram" width="32" height="32">
             </a>
           </li>
           <li>
             <a href="#">
-              <img src="img/icon-twitter.svg" alt="Twitter" width="30" height="30">
+              <img src="img/icon-twitter.svg" alt="Twitter" width="32" height="32">
             </a>
           </li>
         </ul>
-        <div class="navbar navbar-footer">
-          <ul>
-            <li>
-              <a class="link link-enter" href="#">
-                <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M6.49996 2.33334C7.69704 2.33334 8.66663 3.37751 8.66663 4.66668C8.66663 5.95584 7.69704 7.00001 6.49996 7.00001C5.30288 7.00001 4.33329 5.95584 4.33329 4.66668C4.33329 3.37751 5.30288 2.33334 6.49996 2.33334ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.10001 8.72079 7.58334 6.49996 7.58334C4.27913 7.58334 2.16663 9.10001 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z" fill="#ffc600" />
-                </svg>Войти
-              </a>
-            </li>
-            <li>
-              <a class="link link-compare" href="#">
-                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M2.91663 5.36666H4.66663V11.0833H2.91663V5.36666ZM6.18329 2.91666H7.81663V11.0833H6.18329V2.91666ZM9.44996 7.58332H11.0833V11.0833H9.44996V7.58332Z" fill="#ffc600" />
-                </svg>Сравнить
-              </a>
-            </li>
-            <li>
-              <a class="link link-cart" href="#">
-                <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0)">
-                    <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#ffc600" />
-                    <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#ffc600" />
-                  </g>
-                  <defs>
-                    <clipPath id="clip0">
-                      <path d="M0 0H10V10H0V0Z" fill="white" />
-                    </clipPath>
-                  </defs>
-                </svg>Корзина
-              </a>
-            </li>
-          </ul>
-        </div>
+        <ul class="navbar navbar-footer">
+          <li>
+            <a class="link link-enter link-logged" href="#">
+              <svg width="13" height="14" viewBox="0 0 13 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M6.49996 2.33334C7.69704 2.33334 8.66663 3.37751 8.66663 4.66668C8.66663 5.95584 7.69704 7.00001 6.49996 7.00001C5.30288 7.00001 4.33329 5.95584 4.33329 4.66668C4.33329 3.37751 5.30288 2.33334 6.49996 2.33334ZM6.49996 11.6667C6.49996 11.6667 10.8333 11.6667 10.8333 10.5C10.8333 9.10001 8.72079 7.58334 6.49996 7.58334C4.27913 7.58334 2.16663 9.10001 2.16663 10.5C2.16663 11.6667 6.49996 11.6667 6.49996 11.6667Z" fill="#ffc600" />
+              </svg>Валентин Петухов
+            </a>
+            <a class="link link-exit" href="#">Выйти</a>
+          </li>
+          <li>
+            <a class="link link-compare" href="#">
+              <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M2.91663 5.36666H4.66663V11.0833H2.91663V5.36666ZM6.18329 2.91666H7.81663V11.0833H6.18329V2.91666ZM9.44996 7.58332H11.0833V11.0833H9.44996V7.58332Z" fill="#ffc600" />
+              </svg>Сравнить
+            </a>
+          </li>
+          <li>
+            <a class="link link-cart" href="#">
+              <svg width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0)">
+                  <path d="M9.86215 2.5217C9.79278 2.43991 9.69341 2.39316 9.58927 2.39316H7.65774V3.4188C7.65774 3.89008 7.25359 4.2735 6.75684 4.2735C6.26008 4.2735 5.85593 3.89008 5.85593 3.4188V2.39316H4.05413V3.4188C4.05413 3.89008 3.64999 4.2735 3.15323 4.2735C2.65648 4.2735 2.25233 3.89008 2.25233 3.4188V2.39316H0.32089C0.216656 2.39316 0.117286 2.43991 0.0479169 2.5217C-0.0215425 2.6035 -0.0544254 2.71256 -0.0425335 2.82145L0.605665 8.78461C0.617737 9.45692 1.14179 9.99999 1.78431 9.99999H8.12584C8.76828 9.99999 9.29233 9.45692 9.30449 8.78452L9.95269 2.82136C9.96449 2.71256 9.93161 2.6035 9.86215 2.5217Z" fill="#ffc600" />
+                  <path d="M3.15333 3.76068C3.35207 3.76068 3.51369 3.60735 3.51369 3.4188V1.53846C3.51369 1.01051 4.07486 0.683761 4.59477 0.683761H5.49567C6.04288 0.683761 6.39657 1.01923 6.39657 1.53846V3.4188C6.39657 3.60735 6.55829 3.76068 6.75693 3.76068C6.95558 3.76068 7.11729 3.60735 7.11729 3.4188V1.53846C7.11729 0.647009 6.43531 0 5.49567 0H4.59477C3.60126 0 2.79297 0.690171 2.79297 1.53846V3.4188C2.79297 3.60735 2.95459 3.76068 3.15333 3.76068Z" fill="#ffc600" />
+                </g>
+                <defs>
+                  <clipPath id="clip0">
+                    <path d="M0 0H10V10H0V0Z" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>Корзина
+            </a>
+          </li>
+        </ul>
         <p class="footer-phone">Тел.: <a href="tel:+74954959595">+7 (495) 495-95-95</a>
         </p>
         <div class="copyright">
@@ -331,6 +334,7 @@
       </div>
     </div>
   </footer>
+  <script src="js/main.js"></script>
 </body>
 
 </html>
