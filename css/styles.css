@@ -35,23 +35,6 @@
   src: local("Gilroy Extra Bold"), url("../fonts/gilroyextrabold.woff2") format("woff2"), url("../fonts/gilroyextrabold.woff") format("woff");
 }
 
-/* Reset */
-*,
-*::before,
-*::after {
-  -webkit-box-sizing: inherit;
-  box-sizing: inherit;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
-}
-
-a {
-  text-decoration: none;
-}
-
 /* Variables */
 :root {
   --basic-black: #000;
@@ -1959,7 +1942,7 @@ body {
   transition: 0.3s;
 }
 
-.category-grid-item:active .category-grid-img img {
+.category-grid-item:active .category-grid-img > img {
   opacity: 0.3;
 }
 
@@ -2148,7 +2131,7 @@ body {
   margin-right: 0;
 }
 
-.logo-block li:hover img {
+.logo-block li:hover > img {
   -webkit-filter: grayscale(0);
   filter: grayscale(0);
   opacity: 1;
